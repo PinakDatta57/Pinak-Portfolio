@@ -47,10 +47,10 @@ Customers can browse daily menus, check chef availability, place orders, make se
     title: "Personal Portfolio",
     subtitle: "React + Framer Motion Showcase",
     short: "A fully responsive personal portfolio built with React, Framer Motion animations, React Router, and React Type Animation. Features smooth scroll reveals and a dark premium design.",
-    image: "https://placehold.co/700x400/22D3EE/0A0F1E?text=Portfolio+Website",
+    image: "https://i.postimg.cc/52bSpFrV/Screenshot-2026-06-18-123947.png",
     chips: ["React","Framer Motion","React Router","CSS3"],
-    live: "#",
-    github: "https://github.com/Pinak57",
+    live: "https://pinak-portfolio.netlify.app/",
+    github: "https://github.com/Pinak57/Pinak-Portfolio.git",
     description: `A modern, fully responsive personal portfolio website built from scratch with React. Every section has scroll-triggered reveal animations powered by Framer Motion and react-intersection-observer. Features include a typewriter hero, animated skill bars, project detail pages via React Router, and a contact form.
 
 The project demonstrates mastery of React component architecture, CSS custom properties for theming, responsive layouts with CSS Grid and Flexbox, and smooth UX through thoughtful animation.`,

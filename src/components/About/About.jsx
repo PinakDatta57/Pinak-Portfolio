@@ -55,7 +55,7 @@ export default function About() {
             <h3>Full-Stack MERN Developer &amp; Lifelong Learner</h3>
             <p>
               I'm <strong>Pinak Datta</strong>, a Computer Science undergraduate at{' '}
-              <strong>Sylhet Engineering College</strong> with a strong passion for problem-solving
+              <strong>Sylhet Engineering College, school of Applied Science & Technology, SUST</strong> with a strong passion for problem-solving
               and software development. I enjoy building meaningful products that balance
               functionality and design.
             </p>

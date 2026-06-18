@@ -6,19 +6,19 @@ const items = [
   {
     year: '2023 — 2027',
     title: 'B.Sc. in Computer Science',
-    inst:  'Sylhet Engineering College, Bangladesh',
+    inst:  'Sylhet Engineering College, school of Applied Science & Technology, SUST, Bangladesh',
     desc:  'Currently pursuing a Bachelor\'s degree in Computer Science with strong emphasis on core computing principles, problem-solving, and software development. Core areas: Data Structures & Algorithms, OOP, DBMS, Computer Networks, Computer Architecture, Operating Systems.',
   },
   {
     year: '2024 — 2025',
     title: 'Full-Stack MERN Bootcamp',
     inst:  'Programming Hero',
-    desc:  'Completed an intensive full-stack course covering React, Node.js, Express, MongoDB, Firebase Auth, JWT (httpOnly cookies), Stripe payments, REST API design, React Hook Form, Axios interceptors, and deployment on Vercel & Railway.',
+    desc:  'Completed an intensive full-stack course covering React, Node.js, Express, MongoDB, Firebase Auth, JWT (httpOnly cookies), Stripe payments, REST API design, React Hook Form, Axios interceptors, and deployment on Netlify , Vercel & Rander.',
   },
   {
-    year: '2021 — 2023',
+    year: '2018 — 2020',
     title: 'Higher Secondary Certificate (HSC)',
-    inst:  'Science Group — Bangladesh',
+    inst:  'BAF Shaheen College, Shamshernagar (Science Group) — Bangladesh',
     desc:  'Completed HSC in the Science group. Strong foundation in Mathematics and Physics developed a problem-solving mindset I apply daily in software development.',
   },
 ];
