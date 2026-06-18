@@ -4,10 +4,10 @@ const projects = [
     title: "LocalChefBazaar",
     subtitle: "Full-Stack MERN Marketplace",
     short: "A role-based online platform connecting home cooks with customers. Features JWT auth, Stripe payments, real-time order tracking, and three dashboards (User, Chef, Admin).",
-    image: "https://placehold.co/700x400/6366F1/ffffff?text=LocalChefBazaar",
+    image: "https://i.postimg.cc/bJ8VKNLV/Screenshot-2026-06-17-185515.png",
     chips: ["React","Node.js","Express","MongoDB","Firebase","JWT","Stripe"],
-    live: "#",
-    github: "https://github.com/Pinak57",
+    live: "https://localchefbazaaar.netlify.app/",
+    github: "https://github.com/Pinak57/localchef-client.git",
     description: `LocalChefBazaar is a modern full-stack marketplace built with the MERN stack that connects home cooks with customers seeking fresh, homemade food. The platform features three completely separate dashboards — one each for Users, Chefs, and Admins — with role-based access control enforced both on the frontend and backend via JWT tokens stored in httpOnly cookies.
 
 Customers can browse daily menus, check chef availability, place orders, make secure Stripe payments, and track order status in real time. Chefs can list meals, manage menus, accept or reject orders, and view earnings. Admins have full platform oversight including user management, chef application approvals, and a Recharts analytics dashboard.`,
@@ -78,39 +78,47 @@ The project demonstrates mastery of React component architecture, CSS custom pro
     ]
   },
   {
-    id: 3,
-    title: "Task Manager App",
-    subtitle: "React + Firebase Kanban Board",
-    short: "A kanban-style task management app with drag-and-drop, priority levels, due dates, and Firebase real-time sync. Tasks stay updated across all devices instantly.",
-    image: "https://placehold.co/700x400/A855F7/ffffff?text=Task+Manager",
-    chips: ["React","Firebase","Tailwind","dnd-kit"],
-    live: "#",
-    github: "https://github.com/Pinak57",
-    description: `A kanban-style productivity app built with React and Firebase Firestore. Users can create boards, add tasks with priority levels and due dates, and drag tasks between columns (To Do, In Progress, Done). All changes sync in real time across tabs and devices via Firestore listeners.
+  id: 3,
+  title: "HomeNest",
+  subtitle: "MERN Stack Real Estate Listing Platform",
+  short: "A full-stack real estate listing platform where users can add, manage, browse, search, and review rental or sale properties with secure authentication and property management features.",
+  image: "https://i.postimg.cc/HWNZVQQ6/Screenshot-2026-06-18-071408.png",
+  chips: ["React", "Node.js", "Express.js", "MongoDB", "Firebase", "Tailwind CSS"],
+  live: "https://homenestpro.netlify.app/",
+  github: "https://github.com/Pinak57/homenest-client-.git",
+  description: `HomeNest is a full-stack real estate listing platform designed for property owners and buyers/renters. Users can browse, search, and filter properties based on location, price, and category. Authenticated users can add new properties, update existing listings, delete their own properties, and manage ratings and reviews.
 
-Authentication is handled by Firebase Auth with Google sign-in. The UI uses Tailwind CSS for a clean minimal design, and @dnd-kit for the smooth, accessible drag-and-drop experience.`,
-    stack: [
-      "React.js — Frontend SPA",
-      "Firebase Firestore — Real-time database",
-      "Firebase Authentication — Google OAuth sign-in",
-      "Tailwind CSS — Utility-first styling",
-      "@dnd-kit — Accessible drag-and-drop",
-      "Vercel — Deployment"
-    ],
-    challenges: [
-      "Optimistically updating the UI on drag-and-drop while keeping Firestore in sync.",
-      "Managing real-time Firestore listeners efficiently to avoid unnecessary re-renders.",
-      "Handling task order indexes when reordering within the same column.",
-      "Designing the Firestore data model so queries are fast and scalable."
-    ],
-    improvements: [
-      "Add team collaboration so multiple users can share a board.",
-      "Add subtasks and task comments with threaded discussions.",
-      "Build a weekly productivity analytics dashboard.",
-      "Add Pomodoro timer integration per task card.",
-      "Add deadline push notifications."
-    ]
-  }
+The platform includes Firebase Authentication with Email/Password and Google Sign-In, protected routes, MongoDB database integration, property search and sorting functionality, ratings and reviews, responsive design, and a modern user-friendly interface. The application follows CRUD operations and real-world property management workflows.`,
+  
+  stack: [
+    "React.js — Frontend UI Development",
+    "React Router — Client-side Routing",
+    "Firebase Authentication — User Authentication",
+    "Node.js — Backend Runtime",
+    "Express.js — REST API Development",
+    "MongoDB — Database Management",
+    "Tailwind CSS — Responsive Styling",
+    "SweetAlert2 / React Toastify — Notifications",
+    "Vercel — Server Deployment",
+    "Firebase / Netlify — Client Deployment"
+  ],
+
+  challenges: [
+    "Implementing secure private routes and authentication flow.",
+    "Managing CRUD operations while keeping the UI synchronized with MongoDB.",
+    "Building dynamic property search and backend sorting functionality.",
+    "Displaying real-time property ratings and reviews efficiently.",
+    "Maintaining responsive layouts and consistent UI across all devices."
+  ],
+
+  improvements: [
+    "Add property wishlist and favorites functionality.",
+    "Implement direct messaging between buyers and property owners.",
+    "Add advanced map integration using Google Maps API.",
+    "Introduce property booking and appointment scheduling.",
+    "Add AI-powered property recommendations based on user preferences."
+  ]
+}
 ];
 
 export default projects;

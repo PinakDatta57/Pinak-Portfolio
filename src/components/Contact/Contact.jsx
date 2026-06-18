@@ -5,9 +5,9 @@ import { FaEnvelope, FaPhone, FaWhatsapp, FaGithub, FaLinkedinIn, FaFacebookF, F
 import styles from './Contact.module.css';
 
 const cards = [
-  { icon: <FaEnvelope />, label: 'Email',    val: 'pinak@example.com',   href: 'mailto:pinak@example.com' },
-  { icon: <FaPhone />,    label: 'Phone',    val: '+880 1700-000000',    href: 'tel:+8801700000000' },
-  { icon: <FaWhatsapp />, label: 'WhatsApp', val: '+880 1700-000000',    href: 'https://wa.me/8801700000000' },
+  { icon: <FaEnvelope />, label: 'Email',    val: 'pinakdattatp@gmail.com',   href: 'mailto:pinakdattatp@gmail.com' },
+  { icon: <FaPhone />,    label: 'Phone',    val: '+880 1794-026053',    href: 'tel:+8801794026053' },
+  { icon: <FaWhatsapp />, label: 'WhatsApp', val: '+880 1794-026053',    href: 'https://wa.me/8801794026053' },
 ];
 const socials = [
   { icon: <FaGithub />,    href: 'https://github.com/Pinak57',                          label: 'GitHub'   },

@@ -77,7 +77,7 @@ export default function Hero() {
         <motion.div className={styles.photoWrap} initial={{ opacity:0, scale:.9 }} animate={{ opacity:1, scale:1 }} transition={{ duration:.7, delay:.2 }}>
           <div className={styles.ring}>
             <img
-              src="https://placehold.co/350x350/6366F1/ffffff?text=Pinak+Datta"
+              src="https://i.postimg.cc/906yG3HY/Glass-walla-removebg-preview.png"
               alt="Pinak Datta"
               className={styles.photo}
             />
