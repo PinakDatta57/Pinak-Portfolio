@@ -39,6 +39,7 @@ export default function Navbar() {
     setOpen(false);
   };
 
+  
   return (
     <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
       <div className={`container ${styles.inner}`}>
