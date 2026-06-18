@@ -4,8 +4,8 @@ import CountUp from 'react-countup';
 import styles from './About.module.css';
 
 const stats = [
-  { n: 1, suffix: '+', label: 'Year Coding' },
-  { n: 5, suffix: '+', label: 'Projects'    },
+  { n: 3, suffix: '+', label: 'Year Coding' },
+  { n: 10, suffix: '+', label: 'Projects'    },
   { n: 3,  suffix: 'rd', label: 'Year CSE'  },
 ];
 
@@ -31,7 +31,7 @@ export default function About() {
             transition={{duration:.7,ease:'easeOut'}}>
             <div className={styles.imgBox}>
               <img
-                src="https://i.postimg.cc/dtXkgjzg/profile.png"
+                src="https://i.postimg.cc/906yG3HY/Glass-walla-removebg-preview.png"
                 alt="Pinak Datta"
               />
               <div className={styles.imgDeco} />
