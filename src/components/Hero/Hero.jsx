@@ -61,7 +61,7 @@ export default function Hero() {
           </motion.div>
 
           <motion.div className={styles.socials} {...fadeUp(0.6)}>
-            <a href="https://github.com/Pinak57" target="_blank" rel="noreferrer" className="s-icon" aria-label="GitHub">
+            <a href="https://github.com/PinakDatta57" target="_blank" rel="noreferrer" className="s-icon" aria-label="GitHub">
               <FaGithub />
             </a>
             <a href="https://www.linkedin.com/in/pinak-datta-121639417/" target="_blank" rel="noreferrer" className="s-icon" aria-label="LinkedIn">
