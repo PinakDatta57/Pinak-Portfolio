@@ -2,21 +2,9 @@ import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 import styles from './Skills.module.css';
 
-const frontend = [
-  { name: 'HTML5',            pct: 92 },
-  { name: 'CSS3 / Tailwind',  pct: 88 },
-  { name: 'JavaScript ES6+',  pct: 83 },
-  { name: 'React.js',         pct: 80 },
-];
-const backend = [
-  { name: 'Node.js',    pct: 72 },
-  { name: 'Express.js', pct: 70 },
-  { name: 'MongoDB',    pct: 68 },
-  { name: 'REST API',   pct: 75 },
-  { name: 'Firebase',   pct: 78 },
-  { name: 'JWT Auth',   pct: 72 },
-];
-const tools = [
+const frontend = ['HTML5','CSS3 / Tailwind','JavaScript ES6+','React.js'];
+const backend  = ['Node.js','Express.js','MongoDB','REST API','Firebase','JWT Auth'];
+const tools    = [
   'Git','GitHub','Vercel','Netlify','Figma','Vite',
   'npm / yarn','React Router','Framer Motion','Axios',
   'React Hook Form','Recharts','Stripe','SweetAlert2',
@@ -25,15 +13,17 @@ const tools = [
 function BarGroup({ items, inView }) {
   return (
     <div className={styles.bars}>
-      {items.map(({ name, pct }) => (
+      {items.map((name, i) => (
         <div className={styles.barRow} key={name}>
           <div className={styles.barHd}>
-            <span>{name}</span><span>{pct}%</span>
+            <span>{name}</span>
           </div>
           <div className={styles.track}>
-            <div
+            <motion.div
               className={styles.fill}
-              style={{ width: inView ? `${pct}%` : '0%' }}
+              initial={{ width: 0 }}
+              animate={inView ? { width: '100%' } : { width: 0 }}
+              transition={{ duration: 1.2, delay: i * 0.15, ease: 'easeOut' }}
             />
           </div>
         </div>
@@ -44,7 +34,15 @@ function BarGroup({ items, inView }) {
 
 export default function Skills() {
   const [ref, inView] = useInView({ threshold: 0.1, triggerOnce: true });
-  const rv = { hidden:{opacity:0,y:24}, show:(i)=>({opacity:1,y:0,transition:{duration:.55,delay:i*.1,ease:'easeOut'}}) };
+
+  const rv = {
+    hidden: { opacity: 0, y: 24 },
+    show: (i) => ({
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.55, delay: i * 0.1, ease: 'easeOut' },
+    }),
+  };
 
   return (
     <section className={`section ${styles.skills}`} id="skills" ref={ref}>

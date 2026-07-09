@@ -146,3 +146,21 @@
   .ring    { width:210px; height:210px; }
   .bd1,.bd2,.bd3 { display:none; }
 }
+.cursorGlow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  transition: background 0.2s ease;
+}
+.name {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+.letter {
+  display: inline-block;
+  background: linear-gradient(135deg, #fff 50%, var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}

@@ -6,36 +6,62 @@
   gap: 1.5rem;
 }
 .box {
-  background: var(--card); border: 1px solid var(--border); border-radius: var(--r2);
-  padding: 1.8rem; transition: var(--t);
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--r2);
+  padding: 1.8rem;
+  transition: var(--t);
 }
 .box:hover { border-color: var(--border2); box-shadow: var(--sh-glow); }
 .wide { grid-column: 1 / -1; }
 
 .boxTitle {
-  font-family: var(--ff-h); font-size: .9rem; font-weight: 600;
-  color: var(--accent); margin-bottom: 1.4rem;
+  font-family: var(--ff-h);
+  font-size: .9rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 1.4rem;
 }
 
 /* bars */
 .bars { display: flex; flex-direction: column; gap: 1.1rem; }
 .barRow {}
-.barHd { display: flex; justify-content: space-between; font-size: .84rem; color: var(--txt2); margin-bottom: .4rem; }
-.track { height: 7px; background: rgba(255,255,255,.06); border-radius: 8px; overflow: hidden; }
-.fill  {
-  height: 100%; border-radius: 8px;
+.barHd {
+  font-size: .84rem;
+  color: var(--txt2);
+  margin-bottom: .4rem;
+}
+.track {
+  height: 7px;
+  background: rgba(255,255,255,.06);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.fill {
+  height: 100%;
+  border-radius: 8px;
   background: linear-gradient(90deg, var(--accent), var(--cyan));
-  transition: width 1.3s cubic-bezier(.4,0,.2,1);
 }
 
 /* chips */
 .chips { display: flex; flex-wrap: wrap; gap: .65rem; }
 .chip {
-  background: rgba(99,102,241,.1); border: 1px solid var(--border2);
-  color: var(--txt2); padding: .38rem .95rem; border-radius: 50px;
-  font-size: .82rem; font-weight: 500; transition: var(--t); cursor: default;
+  background: rgba(99,102,241,.1);
+  border: 1px solid var(--border2);
+  color: var(--txt2);
+  padding: .38rem .95rem;
+  border-radius: 50px;
+  font-size: .82rem;
+  font-weight: 500;
+  transition: var(--t);
+  cursor: default;
 }
-.chip:hover { background: var(--accent); color: #fff; border-color: var(--accent); transform: translateY(-2px); }
+.chip:hover {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
 
 @media (max-width: 768px) {
   .grid { grid-template-columns: 1fr; }

@@ -1,6 +1,6 @@
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedinIn, FaFacebookF, FaDownload, FaEye, FaChevronDown } from 'react-icons/fa';
+import { FaGithub, FaLinkedinIn, FaFacebookF, FaEye, FaChevronDown } from 'react-icons/fa';
 import styles from './Hero.module.css';
 
 const fadeUp = (delay = 0) => ({
@@ -51,8 +51,8 @@ export default function Hero() {
           </motion.p>
 
           <motion.div className={styles.btns} {...fadeUp(0.5)}>
-            <a href="/assets/resume.pdf" download className="btn btn-primary">
-              <FaDownload /> Download Resume
+            <a href="/assets/resume.pdf" target="_blank" rel="noreferrer" className="btn btn-primary">
+              <FaEye /> View Resume
             </a>
             <a href="#projects" className="btn btn-outline"
               onClick={e => { e.preventDefault(); document.getElementById('projects')?.scrollIntoView({ behavior:'smooth' }); }}>
@@ -96,4 +96,3 @@ export default function Hero() {
     </section>
   );
 }
-
